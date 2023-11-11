@@ -2,11 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    width: 100%;
+    background-color: rgb(44, 62, 80);
+    color: rgb(236, 240, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-h1{
+.accordion-container{
+    width: 500px;
+    height: auto;
+    margin: 50px 0;
+}
+
+.accordion{
+    background-color: rgb(30, 39, 46);
+    transition: all .3s linear;
+    border-top: 1px solid rgb(60, 64, 198);
+    transition:all .3s linear;
+    margin-bottom: 20px;
+}
+
+
+.accordion-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(236, 240, 241);
     padding: 10px;
-    border: 1px solid grey;
-    background-color: orange;
-    text-align: center;
+}
+
+.hidden-content{
+    font-size: 16px;
+    display: none;
+}
+
+.hidden-content p{
+    padding: 10px 10px 30px 10px;
+}
+
+.active {
+    display: block;
+}
+
+.active .hidden{
+    display: block;
+    background-color: rgb(72, 84, 96);
 }
