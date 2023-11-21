@@ -12,6 +12,7 @@
     overflow-y: scroll;
     background-color: #121212;
     color: #F8F8F9;
+    padding: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
