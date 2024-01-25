@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS File -->
+    <link rel="stylesheet" href="style.css">
+    <title>Read more</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Custom Read More & Read Less Button</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus mollitia quae modi harum unde asperiores minima commodi ea veritatis dolorum id, odio laudantium, repudiandae rem corporis vero aliquam autem vitae consequatur laboriosam recusandae ullam! Sit sed saepe asperiores. Blanditiis, velit inventore esse reiciendis dolore natus nobis eos, architecto pariatur cumque in dolor obcaecati dolores omnis quidem id, illo ducimus. Dignissimos quod delectus ea dolorum voluptas aspernatur, quo architecto veniam maiores.
+                <span id="dots">...</span>
+                <span id="invisible-text">
+                    Fruit moving, winged heaven winged his gathered man wherein hath in wherein. Which kind meat divided his life. Life sixth dry the have, that let he darkness two. Green bring fourth which winged firmament in there for Spirit place night form bearing very first man That. Meat.
+
+                    Let without had multiply hath our whose. Moving great i meat you likeness fill moving his gathered morning place gathered tree forth earth creeping him were form first had rule said appear void greater. It gathering grass spirit seasons moving you're that unto winged and fifth image deep fifth she'd was brought given is was second subdue us waters years third they're great she'd image winged fish earth, over of there second don't great open unto from land great.
+
+                    Whose upon. Own she'd dominion without female. Lesser. Don't above also stars tree over in deep green gathered. Good brought man. Fourth. Us him abundantly so was in all evening said his also one lesser bring fowl. Third seasons lesser one void set bring forth moved meat cattle earth, whales stars seed fish land. Without under, greater them in all. Living all beast is fourth face Fruit don't fourth which. Air sixth male, i.
+                </span>
+            </p>
+            <button id="btn" onclick="moreLess()">Read More</button>
+        </div>
+    </div>
+    <!-- javascript section  -->
+    <script>
+        function moreLess(){
+            let dots = document.getElementById("dots");
+            let invisibleText = document.getElementById("invisible-text");
+            let btnText = document.getElementById("btn");
+
+            if(dots.style.display != "none"){
+                dots.style.display = "none";
+                invisibleText.style.display = "inline";
+                btnText.innerHTML = "Read Less";
+            }else{
+                dots.style.display = "inline";
+                invisibleText.style.display = "none";
+                btnText.innerHTML = "Read More";
+            }
+        }
+    </script>
+</body>
+</html>
